@@ -4,6 +4,7 @@ const canvas = document.querySelector('.canvas')
 const canvasRow = document.querySelector('.canvas-row')
 const btnCanvas = document.querySelector('#btnCanvas')
 const btnCanvasClean = document.querySelector('#btnCanvasClean')
+const btnCanvasAdjust = document.querySelector('#btnCanvasAdjust')
 const beadTemplate = document.querySelector('#beadTemplate').content
 let beads
 let fragment = document.createDocumentFragment()
@@ -37,7 +38,7 @@ btnCanvas.addEventListener('click', () => {
     }
 })
 
-let colorSelected = ''
+let colorSelected = 'reset'
 
 const colors = document.querySelectorAll('.color')
 for (let i = 0; i < colors.length; i++){
@@ -65,3 +66,10 @@ const cleanCanvas = () => {
         }   
     } catch (error) { }   
 }
+
+btnCanvasAdjust.addEventListener('click', () => {
+    const canvasRows = document.querySelectorAll('.canvas-row')
+    for (let i = 0; i < canvasRows.length; i++){
+        canvasRows[i].classList.toggle('adjust')
+    }
+})
