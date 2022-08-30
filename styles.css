@@ -36,7 +36,7 @@ body{
     text-align: center;
     width: 60px;
     margin: 0 5px;
-    border: 1px solid #272727;
+    border: 1px solid #4b4b4b;
     border-radius: 5px;
     background-color: #1E1A1A;
     color: #e5e5e5;
@@ -46,7 +46,7 @@ body{
     padding: 7px 15px;
     margin-left: 15px;
     font-weight: 700;
-    border: 2px solid #272727;
+    border: 2px solid #4b4b4b;
     border-radius: 5px;
     background-color: #1E1A1A;
     color: #fff;
@@ -69,7 +69,8 @@ body{
     margin: 10px auto;
     padding: 10px 10px 30px 10px;
     overflow-x: auto;  
-    border: 1px solid #272727;          
+    border: 1px solid #272727;   
+    user-select: none;       
 }
 .canvas-row{
     width: 100%;
