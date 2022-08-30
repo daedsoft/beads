@@ -140,5 +140,6 @@ body{
 }
 
 .adjust{
-    transform: scale(0.5);
+    /* transform: scale(0.5); */
+    zoom: 50%;
 }
